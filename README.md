@@ -41,7 +41,7 @@ Run the following commands from the repo root :
 
 ```sh
 emcmake cmake -G Ninja -B build  
-cmake --build ./build --target base_math
+cmake --build ./build --target wasm_base_math
 node ./test_math.js
 ```
 
@@ -50,7 +50,7 @@ alternative:
 
 ```sh
 cmake --preset wasm
-cmake --build --preset wasm --target base_math
+cmake --build --preset wasm --target wasm_base_math
 node ./test_math.js
 ```
 

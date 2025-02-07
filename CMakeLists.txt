@@ -8,6 +8,7 @@ project(base_math)
 add_subdirectory(libs/calc)
 add_subdirectory(libs/shape)
 add_subdirectory(libs/base_math)
+add_subdirectory(tui/calc_rect_surface)
 
 
 

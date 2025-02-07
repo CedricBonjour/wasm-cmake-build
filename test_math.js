@@ -1,6 +1,6 @@
 const fs = require('fs');
 // const wasmCode = fs.readFileSync('./build/libcalc.wasm');
-const wasmCode = fs.readFileSync('./bin/base_math.wasm');
+const wasmCode = fs.readFileSync('./bin/wasm_base_math.wasm');
 
 var wasm_api;
 var wasm_heap;

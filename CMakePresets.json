@@ -22,6 +22,12 @@
             "cacheVariables": {
                 "CMAKE_TOOLCHAIN_FILE": "$env{EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
             }
+        },  
+        {
+            "name": "msvc",
+            "inherits": "default",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build/msvc"
         }
        
     ],
@@ -29,6 +35,10 @@
         {
             "name": "wasm",
             "configurePreset": "wasm"
+        },
+        {
+            "name": "msvc",
+            "configurePreset": "msvc"
         }
     ],
     "testPresets": []
